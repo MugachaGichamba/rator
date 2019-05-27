@@ -11,5 +11,8 @@ def home(request):
     return render(request, "users/home.html")
 
 def register(request):
-    form = UserCreationForm()
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+    else:
+        form = UserCreationForm()
     return render(request, 'users/register.html', {'form' : form})
