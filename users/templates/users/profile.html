@@ -2,11 +2,13 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-    <div >
+    <div>
         <img style="border-radius: 50%;width: 150px;height: 150px" src="{{ user.profile.image.url }}" alt="">
-    <h2>{{ user.username }}</h2>
-        <p> <small>{{ user.email }}</small> </p>
-    <p>{{ user.bio }}</p>
+        <h2>{{ user.username }}</h2>
+        <p>
+            <small>{{ user.email }}</small>
+        </p>
+        <p>{{ user.bio }}</p>
     </div>
-
+    <a href="{% url 'update' %}" class="ml-2">Update Profile</a>
 {% endblock %}
