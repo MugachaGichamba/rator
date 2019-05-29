@@ -1,6 +1,11 @@
 {% extends 'rateme/base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
+
+    <div >
+        <img src="{{ user.profile.image.url }}" alt="">
     <h2>{{ user.username }}</h2>
+    <p>{{ user.bio }}</p>
+    </div>
 
 {% endblock %}
