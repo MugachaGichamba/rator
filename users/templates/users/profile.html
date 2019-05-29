@@ -3,8 +3,9 @@
 {% block content %}
 
     <div >
-        <img src="{{ user.profile.image.url }}" alt="">
+        <img style="border-radius: 50%;width: 150px;height: 150px" src="{{ user.profile.image.url }}" alt="">
     <h2>{{ user.username }}</h2>
+        <p> <small>{{ user.email }}</small> </p>
     <p>{{ user.bio }}</p>
     </div>
 
