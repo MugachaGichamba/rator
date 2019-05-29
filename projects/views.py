@@ -16,6 +16,6 @@ class ProjectCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class ProjectDetailView(ListView):
+class ProjectListView(ListView):
 
     model = Project
