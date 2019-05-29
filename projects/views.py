@@ -6,7 +6,7 @@ from .models import Project
 from django.contrib import messages
 
 
-class PostCreateView(LoginRequiredMixin, CreateView):
+class ProjectCreateView(LoginRequiredMixin, CreateView):
     model = Project
     fields = ['title', 'image', 'description', 'link']
 
