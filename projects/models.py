@@ -32,5 +32,5 @@ class Rating(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
 
     def get_absolute_url(self):
-        return reverse('my-projects')
+        return reverse('home')
 
