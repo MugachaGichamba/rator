@@ -1,32 +1,21 @@
 {% extends 'rateme/base.html' %}
 {% load mathfilters %}
 {% block content %}
-    <div class="row">
-        {% for rating in object_list %}
+    {% if rating %}
+            {% for rating in object_list %}
 
-            <ul>
-            <li>{{ rating.content|add:rating.design }}</li>
-                <li>{{ rating.content }}</li>
-                <li>{{ rating.author }}</li>
-{#                <a href="{% url 'project-detail'  project.id %}" target="_blank"><img#}
-{#                        style="width: 200px; height: 200px;"#}
-{#                        src="{{ project.image.url }}"#}
-{#                        alt="project image"></a>#}
-{##}
-{#                <p>#}
-{#                    {{ project.description }}#}
-{#                </p>#}
-{#                <a href="{{ project.link }}">Go to Website</a>#}
-{#                <a href="{% url 'rate_project' project.id %}">Rate Project</a>#}
-{#                <a href="{% url 'view_ratings' project.id %}">View Ratings</a>#}
-            </ul>
+        <p><strong>Rated By: </strong>{{ rating.author }} <strong>Content:</strong> {{ rating.content }}
+            <strong>Design:</strong> {{ rating.design }}
+            <strong>Usability:</strong> {{ rating.usability }} </p>
+
+        <p>Total: {{ rating.content|add:rating.design|add:rating.usability }} </p>
 
 
+    {% endfor %}
 
+    {% else %}
+        <h1>No Ratings Yet for this project</h1>
+    {% endif %}
 
-        {% endfor %}
-
-
-    </div>
 
 {% endblock content %}
