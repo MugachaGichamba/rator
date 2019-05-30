@@ -2,6 +2,8 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.core.validators import MaxValueValidator, MinValueValidator
+
 
 class Project(models.Model):
     title = models.CharField(max_length=100)
@@ -20,3 +22,9 @@ class Project(models.Model):
 
     def get_absolute_url(self):
         return reverse('home')
+
+
+class Rating(models.Model):
+    content = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)]
+    design = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
+    usability = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
