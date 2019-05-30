@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d73b31e-ce6e-4373-9e26-b946851c58aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rateme/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rateme/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rateme/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -296,7 +297,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558942913782</updated>
       <workItem from="1558942915201" duration="5696000" />
-      <workItem from="1559023678344" duration="30147000" />
+      <workItem from="1559023678344" duration="30511000" />
     </task>
     <task id="LOCAL-00001" summary="created login path in urls">
       <created>1559109511118</created>
@@ -561,13 +562,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35843000" />
+    <option name="totallyTimeSpent" value="36207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="25" width="683" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.711146" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2919937" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -862,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rateme/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="122" column="21" lean-forward="true" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
