@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d73b31e-ce6e-4373-9e26-b946851c58aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/project_pics/grey.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rateme/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rateme/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rateme/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rateme/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rateme/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rateme/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rateme/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -312,7 +305,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558942913782</updated>
       <workItem from="1558942915201" duration="5696000" />
-      <workItem from="1559023678344" duration="31836000" />
+      <workItem from="1559023678344" duration="31966000" />
     </task>
     <task id="LOCAL-00001" summary="created login path in urls">
       <created>1559109511118</created>
@@ -577,7 +570,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37532000" />
+    <option name="totallyTimeSpent" value="37662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -597,7 +590,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32736155" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32736155" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -878,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rateme/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
