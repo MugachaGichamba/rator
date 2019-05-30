@@ -25,6 +25,8 @@ class Project(models.Model):
 
 
 class Rating(models.Model):
-    content = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)]
+    content = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
     design = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
     usability = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
