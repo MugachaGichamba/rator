@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, DetailView
 from .models import Project, Rating
 from django.contrib import messages
 
@@ -36,4 +36,17 @@ class RateProjectCreateView(LoginRequiredMixin, CreateView):
         form.instance.project_id =  self.kwargs['project_id']
         messages.success(self.request, "Project Rated")
         return super().form_valid(form)
+
+
+class ProjectDetailView(DetailView):
+    model = Project
+
+class ViewRatings(ListView):
+    model = Rating
+
+    def get_queryset(self):
+        project_id = self.kwargs['project_id']
+        rating = Rating.objects.filter(project=project_id)
+        return rating
+
 

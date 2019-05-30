@@ -1,0 +1,26 @@
+{% extends 'rateme/base.html' %}
+
+{% block content %}
+    <div class="row">
+
+        <div class="col-md-3" style="text-align: center">
+
+            <h2>By: {{ object.author }}</h2>
+            <h3>{{ object.title }}</h3>
+            <a href="{% url 'project-detail'  object.id %}" target="_blank"><img
+                    style="width: 400px; height: 400px; text-align: center"
+                    src="{{ object.image.url }}"
+                    alt="project image"></a>
+
+            <p>
+                {{ object.description }}
+            </p>
+            <a href="{{ object.link }}">Go to Website</a>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock content %}

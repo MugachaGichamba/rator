@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'projects.apps.ProjectsConfig',
     'crispy_forms',
+    'mathfilters',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

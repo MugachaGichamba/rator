@@ -5,17 +5,19 @@
         {% for project in object_list %}
             <div class="col-md-3">
                 <div class="card">
-                    <h3>{{ project.id }}</h3>
+
                     <h3>{{ project.title }}</h3>
-                    <a href="{% url 'project-detail' %}" target="_blank"><img style="width: 200px; height: 200px;"
-                                     src="{{ project.image.url }}"
-                                     alt="project image"></a>
+                    <a href="{% url 'project-detail'  project.id %}" target="_blank"><img
+                            style="width: 200px; height: 200px;"
+                            src="{{ project.image.url }}"
+                            alt="project image"></a>
 
                     <p>
                         {{ project.description }}
                     </p>
                     <a href="{{ project.link }}">Go to Website</a>
                     <a href="{% url 'rate_project' project.id %}">Rate Project</a>
+                    <a href="{% url 'view_ratings' project.id %}">View Ratings</a>
                 </div>
             </div>
         {% endfor %}
