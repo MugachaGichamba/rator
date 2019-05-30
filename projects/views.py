@@ -36,3 +36,4 @@ class RateProjectCreateView(LoginRequiredMixin, CreateView):
         form.instance.project_id =  self.kwargs['project_id']
         messages.success(self.request, "Project Rated")
         return super().form_valid(form)
+

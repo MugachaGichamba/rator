@@ -7,7 +7,7 @@
                 <div class="card">
                     <h3>{{ project.id }}</h3>
                     <h3>{{ project.title }}</h3>
-                    <a href="#" target="_blank"><img style="width: 200px; height: 200px;"
+                    <a href="{% url 'project-detail' %}" target="_blank"><img style="width: 200px; height: 200px;"
                                      src="{{ project.image.url }}"
                                      alt="project image"></a>
 
@@ -16,11 +16,6 @@
                     </p>
                     <a href="{{ project.link }}">Go to Website</a>
                     <a href="{% url 'rate_project' project.id %}">Rate Project</a>
-                    {##}
-                    {#                    <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>#}
-                    {#                </div>#}
-                    {##}
-                    {#            </div>#}
                 </div>
             </div>
         {% endfor %}
